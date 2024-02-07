@@ -1,99 +1,151 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIO3</title>
-</head>
-<h3 style="text-align: center;">BIODATA</h3>
-<body style="background-color:aquamarine;" >
+  <head>
+    <title>bio data</title>
+  </head>
+  <style>
+    body {
+  background-color: rgb(163, 199, 230);
+    }
+
+    h2 {
+    text-align: center;
+    }
+    table{
+
+        border-spacing: 20px;
+
+    }
+  
+   
+.input{
+    margin-left: 50px; 
+}
+  </style>
+
+
+  <body>
+    <h2>BIO DATA</h2>
+      <form>
+
+      <table text-align="center" cellpadding="5">
+      <tr>
+      <td>Name</td>
+      
+      <td><span class="middle">:</span><input class="input" type="text" /></td>
+      </tr>
+      
+
+      <tr>
+        <td>Address </td>
+        <td><span class="middle">:</span><input class="input" type="text"/>
+        </td>
+      </tr>
+
     
-
-    <form style="text-align: center;">
-
-        <label style="text-align: center;">NAME &nbsp; : </label>
-        <input type="text"><br>
-        <br>
-
-        <label style="text-align: center;">ADDRESS &nbsp;: </label>
-        <textarea name="ADDRESS" rows="1" cols="17"></textarea><br>
-        <br>
-
-        <label style="text-align: center;">AGE &nbsp;:</label>
-        <input type="number"`1w><br>
-        <br>
-
-        <label style="text-align: center;">GENDER &nbsp;:</label>
-        <input type="radio" id="Female" name="ss">
-        <label for="Female">FEMALE</label>
-        <input type="radio" id="Male" name="ss">
-        <label for="Male">MALE</label><br>
-        <br>
-
-        <label style="text-align: center;">DOB &nbsp;:</label>
-        <input type="date"><br>
-        <br>
-
-        <label style="text-align: center;">EMAIL &nbsp;:</label>
-        <input type="email"><br>
-        <br>
-
-        <label style="text-align: center;">PINCODE &nbsp;:</label>
-        <input type="number"><br>
-        <br>
-
-        <label style="text-align: center;">STATE &nbsp;:</label>
-        <input type="text"><br>
-        <br>
-
-        <label style="text-align: center;">DISTRICT &nbsp;:</label>
-        <select id="DISTRICT" name="DISTRICT">
-            <option value="Kozhikode">Kozhikode</option>
-            <option value="Kollam">Kollam</option>
-            <option value="Kannur">Kannur</option>
-            <option value="Idukki">Idukki</option>
-         </select>
-
-        <br>
-        <br>
-        <label style="text-align: center;">QUALIFICATION &nbsp;:</label>
-        <select id="QUALIFICATION" name="QUALIFICATION">
-            <option value="BTech">Btech</option>
-            <option value="Plus Two">Plus Two</option>
-            <option value="Mbbs">mbbs</option>
-            <option value="MCA">MCA</option>
+      <tr>
+        <td>Age</td>
+        <td><span class="middle">:</span><input class="input" type="text"/>
+        </td>
+      </tr>
 
 
-        </select><br>
-        <br>
-        <label style="text-align: center;">HOBBY &nbsp;:</label>
-        <input type="checkbox" id="Singing" name="dd">
-         <label for="Singing">Singing</label>
+      <tr>
+          <td>Dob</td>
+          <td><span class="middle">:</span><input class="input" type="text"/>
+        </tr>
 
-        <input type="checkbox" id="Dancing" name="dd">
-        <label for="Dancing">Dancing</label>
 
-        <input type="checkbox" id="Drawing" name="dd">
-        <label for="Drawing">Drawing</label>
-        <br>
-
-        <br>
-        <label style="text-align: center;">LANGUAGE &nbsp;:</label>
-
-        <input type="checkbox" id="MALAYALAM" name="EE">
-        <label for="MALAYALAM">MALAYALAM</label><br>
-
-        <input type="checkbox" id="HINDI" name="dd">
-        <label for="HINDI">&nbsp;HINDI</label><br>
-
-        <input type="checkbox" id="ENGLISH" name="dd">
-        <label for="ENGLISH">ENGLISH</label><br>
-
-        <label for="myfile">PHOTO &nbsp;:</label>
-        <input type="button" value="Register">
+        <tr>
+            <td>Email</td>
+            <td><span class="middle">:</span><input class="input" type="text"/></td>
+            <!-- <td><input class="input" type="text" name="EmailID" maxlength="100"></td> -->
+        </tr>
         
         
-     </form>
+        <tr>
+        <td>Pincode</td>
+        <td><span class="middle">:</span><input class="input" type="text"/>
+        </td>
+        </tr>
+        
+        <tr>
+        <td>State</td>
+        <td><span class="middle">:</span><input class="input" type="text"/>
+        </td>
+        </tr>
+
+
+        <tr>
+        <td>District</td>
+        <td><span class="middle">:</span>
+            <select class="input">
+            <option value="calicut" >Calicut</option>
+            <option value="palakkad"selected>Palakkad</option>
+            <option value="thrissur">Thrissur</option>
+            <!-- <option value="eranakulam">Eranakulam</option> -->
+            <!-- <option value="alappuzha">Alappuzha</option> -->
+            <!-- <option value="kollam">Kollam</option> -->
+            </select>
+        </td>
+        </tr>
+
+
+        <tr>
+        <td>Qualification</td>
+        <td><span class="middle">:</span>
+            <select class="input">
+            <option value="mca" >MCA</option>
+            <option value="bca" selected>BCA</option>
+            <option value="b com">B Com</option>
+            </select>
+        </td>
+        </tr>
+
+
+        <tr>
+        <td>Hobbies</td>
+        <td>
+            <span class="middle">:</span>
+            <input class="input" type="checkbox">
+            <label for="vehicle1">Reading</label>
+            <input  type="checkbox">
+            <label for="vehicle2">Drawing</label>
+            <input  type="checkbox">
+            <label for="vehicle3">Singing</label>    
+        </td>
+        </tr>
+
+
+        <tr>
+        <td>Language</td>
+        <td>
+          <span class="middle">:</span>
+          <input class="input" type="checkbox" style="margin-left: 41px;">
+          <label for="vehicle1">English</label><br>
+          <input class="input" type="checkbox">
+          <label for="vehicle2">Malayalam</label><br>
+          <input class="input" type="checkbox">
+          <label for="vehicle3">Hindi</label><br>
+          <input class="input" type="checkbox">
+          <label for="vehicle3">Tamil</label> 
+        </td>
+        </tr>
+
+
+        <tr>
+        <td>Photo</td>
+        <td><span class="middle">:</span><input class="input" type="File"  />
+        </td>
+        </tr>
+        
+    <td colspan="2" text-align="center">
+    <input class="input" type="submit" value="Register">
+    </td>
+    </tr>
+    </table>
+    </form>
     
-</body >
+  </body>
 </html>
